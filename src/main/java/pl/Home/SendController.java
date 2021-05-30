@@ -30,9 +30,9 @@ public class SendController {
     public @ResponseBody
     String checkIfAtHome() {
         if (repository.findById(1).get().getIsAtHome() == 1) {
-            return "Jest";
+            return "<h1>Jest</h1>";
         } else {
-            return "Nie ma";
+            return "<h1>Nie ma</h1>";
         }
 
     }
